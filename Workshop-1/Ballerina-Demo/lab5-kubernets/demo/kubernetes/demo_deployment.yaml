@@ -1,0 +1,47 @@
+---
+apiVersion: "extensions/v1beta1"
+kind: "Deployment"
+metadata:
+  annotations: {}
+  finalizers: []
+  labels:
+    app: "demo"
+  name: "ballerina-demo"
+  ownerReferences: []
+spec:
+  replicas: 1
+  template:
+    metadata:
+      annotations: {}
+      finalizers: []
+      labels:
+        app: "demo"
+      ownerReferences: []
+    spec:
+      containers:
+      - args: []
+        command: []
+        env:
+        - name: "CONFIG_FILE"
+          value: "/home/ballerina/conf/ballerina.conf"
+        envFrom: []
+        image: "demo/ballerina-demo"
+        imagePullPolicy: "IfNotPresent"
+        name: "ballerina-demo"
+        ports:
+        - containerPort: 9090
+          protocol: "TCP"
+        volumeMounts:
+        - mountPath: "/home/ballerina/conf/"
+          name: "hello-ballerina-conf-config-map-volume"
+          readOnly: false
+      hostAliases: []
+      imagePullSecrets: []
+      initContainers: []
+      nodeSelector: {}
+      tolerations: []
+      volumes:
+      - configMap:
+          items: []
+          name: "hello-ballerina-conf-config-map"
+        name: "hello-ballerina-conf-config-map-volume"

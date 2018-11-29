@@ -1,0 +1,2 @@
+curl -d "Tweet from Kubernetes" -X POST  http://localhost:30728
+{"text":"Tweet from Kubernetes #ballerina", "id":978399924428550145, "agent":"Ballerina"}

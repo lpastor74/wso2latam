@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: hello
+  version: 1.0.0
+paths:
+  /:
+    post:
+      operationId: hi
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/Request'
+        required: false
+      responses:
+        200:
+          description: Successful
+          content:
+            application/json:
+              example: Ok
+components:
+  schemas:
+    Request:
+      type: object

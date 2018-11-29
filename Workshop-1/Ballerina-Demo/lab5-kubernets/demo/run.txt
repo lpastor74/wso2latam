@@ -1,0 +1,5 @@
+ballerina build demo.bal
+kubectl apply -f /Users/rm/Desktop/Ballerina-Demo/demo5-kubernets/demo/kubernetes/
+kubectl get pods
+kubectl get svc
+kubectl delete -f /Users/rm/Desktop/Ballerina-Demo/demo5-kubernets/demo/kubernetes/

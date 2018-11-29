@@ -1,0 +1,1 @@
+ballerina run demo.bal --config twitter.toml

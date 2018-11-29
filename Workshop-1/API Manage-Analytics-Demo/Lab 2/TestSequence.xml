@@ -1,0 +1,3 @@
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="TestSequence">
+    <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
+</sequence>

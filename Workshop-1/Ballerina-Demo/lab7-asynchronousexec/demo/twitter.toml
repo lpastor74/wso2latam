@@ -1,0 +1,5 @@
+# Ballerina demo config file
+clientId = "XXXXXXXXXXXXXXXXXXX"
+clientSecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+accessToken = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+accessTokenSecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
